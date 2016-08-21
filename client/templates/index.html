@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="smarticles"> 
+  <head>
+        <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+	<li><a ui-sref="about">About</a></li>
+	<li><a ui-sref="team">Meet the Team</a></li>
+	<li><a ui-sref="robots">Our Robots</a></li>
+        <li><a ui-sref="sponsors">Our Sponsors</a></li>
+    </ul>
+</nav>
+ 	<div ng-controller="homeController">
+		<h1>{{testStuff}}</h1>
+	</div>
+	<div class="container">
+	    <div ui-view></div>
+	</div>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="/app.js"></script>
+	<script type="text/javascript" src="/templates/home-controller.js"></script>
+  </body>
+</html>
