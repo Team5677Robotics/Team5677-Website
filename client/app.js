@@ -20,10 +20,10 @@ app.config(function($stateProvider, $urlRouterProvider){
     })
     .state('robots',{
 	url:'/robots',
-	templateUrl:'./client/templates/robots-partial.html'
+	templateUrl:'/client/templates/robots-partial.html'
     })
     .state('sponsors', {
 	url:'/sponsors',
-	templateUrl:'./client/templates/sponsors-partial.html'
+	templateUrl:'/client/templates/sponsors-partial.html'
     });
 });
